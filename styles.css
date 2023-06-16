@@ -1,5 +1,25 @@
 /*page1*/
 
+.text{
+    font-family: 'Roboto, Comic Sans MS';
+    font-style: normal;
+    font-size: 14px;
+}
+
+.text-gray{
+    color:gray;    
+    font-size: 18px
+}
+
+.letter-blue{
+    color:blue;
+    font-size: medium;
+}
+.img-tamaño{
+    position: absolute;
+    width: 170px;
+    height: 160px;
+}
 .padre-uno{
     display:block;
     width: 1500px;
@@ -8,25 +28,12 @@
     background-color: black;
     /*position:absolute;*/
     border:2px solid rgb(64, 71, 50);    
-   /* align-items: center;*/
+    align-items: center;
     justify-content:left;
     padding: 10px;
     margin: 5px;
 }
 
-/*
-.padre-uno{
-    width: 1500px;
-    height: 100px;
-    /*position:absolute;
-    border:1px solid rgb(64, 71, 50);    
-    display: flex;
-    flex-direction:row ;
-    flex-wrap: wrap;
-   /* align-items: center;
-    justify-content: space-around;
-}
-*/
 .padre-unoA{
     width: 600px;
     height: 30px;
@@ -115,7 +122,7 @@
     padding: 10px;
 }
 
-/*header of page */
+/*header of page 
 h2.colorblue{
     color:blue;
     font-size: 10px;
@@ -129,7 +136,7 @@ h2.colorsize{
 h2.size{
     font-size: 14px;
 }
-
+*/
 /*next line*/
 h3.colors{
     color:black;
@@ -140,8 +147,6 @@ h3.colors{
     --second-title-color: #303030;
     --accent-color:#ff6c00;
     --second-text-color: #9da4bd;
-    --font-family: 'sans serif';
-
 }
 
 html {
@@ -162,62 +167,27 @@ html {
     border-color: var(--main-title-color)
 }
 
-/* footer*/
+.nav{
+    width: 1600px;
+    height:300px;
+  }
 
-.header-phone{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 30px;
-    letter-spacing:0.1em;
-    color: gray;
-}
-
-/*imagenes*/
-h4{
-    color:gray;
-}
-
-/*
-.titulo{
-    color:gray;
-}
-
-botton{
-    color:while;
+/*page1* - Letrero food CONTACTO*/
+.parent-food {
+    color: white;
     background-color:black;
-}
-
-botton:hover{
-    color:black;
-    background-color:while;
-    border:solid;
-}
-
-.on-hover:hover{
+    text-align: left;
+  }
+  
+  .child-a {
+    color:blue;
+    text-align: left;
+  }
+  .child-b {
     color:white;
-}
-
-colora{
-    color:red;
-}
-
-.text_align_center{
-    text-align: center;
-}
-
-.text_align_right{
-    text-align: right;
-}
-
-.index{
-    text-indent:50px;
-}
-
-.letter-spacing{
-    font-weight: 600;
-    font: size 24px;
-    line-height: 60px;
-    vertical-align: botton;
-    font-family: 'Roboto';
-}
-*/
+    text-align: left;
+  }
+  .parent-food, .child-a, .child-b {
+    padding: 10px; 
+    border-radius: 4px;    
+  }
