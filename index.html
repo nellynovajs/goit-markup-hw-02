@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<header>
+	<head>
 		<meta charset="UTF-8"/>
 		<meta name="Primer Modulo HTML Web Studio" content="HTML5 con destino a principiantes">
-		<link rel="stylesheet"  href="styles.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-		<link rel="preconnect" href="https://fonts.goolgeapis.com/ccs2?family=Tangerine:wght@700&display=swap"/>
-		<title>webStudio</title>
-	</header>	
+		<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+		<link rel="stylesheet"  href="css/styles.css"/>
+		<title>Prueba3</title>
+	</head>	
 	<body>
-		<header class="text">
-			<nav>
-				<ul>
-					<li><h2 class="letter-blue">WebStudio</h2></li>
-					<li>Estudio</li>
-					<li><a href="portafolio.html">portafolio.html</a></li>
-					<li>Contactos</li>
-					<li><a href="mailito:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a href="tel:+525555296000">+525555296000</a></li>
-				</ul>
+		<header>
+			<nav class="container">
+				<section class="container-text">
+					<h3 class="child-textblue">WebStudio</h3>					
+					<h3 class="child-textblack">Estudio</h3>
+					<a class="child-textblue" href="portafolio.html">portafolio.html</a>
+					<h3 class="child-textblack">Contactos</h3>
+				</section>
+				<section class="container-contact">
+					<a class="child-textgray" href="mailito:info@devstudio.com">info@devstudio.com</a>
+					<a class="child-textgray" href="tel:+525555296000">+525555296000</a>
+				</section>
 			</nav>
-			<nav class="padre-uno nav">
-				<h1>SOLUCIONES EFICACES PARA <br> SU NEGOCIO</h1>
-				<h3 class="child">Solicite nuestro servicio</h3>
+			<nav class="container">
+				<section class="container-solution">
+					<h1 class="child-textwhile">SOLUCIONES EFICACES PARA</h1>
+					<h1 class="child-textwhile">SU NEGOCIO</h1>
+					<h3 class="box-dos child-textwhile">Solicite nuestro servicio</h3>
+				</section>	
 			</nav>
 		</header>
 		<main>
-			<section class="text">
-				<ul>
-					<li>
+			<section class="container">
+				<ul class="container-boxtext">
+					<li class="child-boxtext">
 						<h3>ATENCIÓN A LOS DETALLES</h3>
 						<p class="text-gray">Nos adentramos en todos los detalles y<br>
 						 procesos de su negocio, para así<br>
 						 desarrollar una solución a su medida.</p>
+					</li>
+					<li class="child-boxtext"> 
 						<h3>PUNTUALIDAD</h3>
 						<p class="text-gray">Con nosotros, usted puede sentirse<br> 
 						seguro y protegido. Un principio<br>
 						importante de la empresa: respetar su<br>
 						tiempo y respetar los plazos acordados.</p>
+					</li>
+					<li class="child-boxtext">
 						<h3>PLANIFICACIÓN</h3>
 						<p class="text-gray">Usted podrá observar y participar en<br>
 						cada fase del desarrollo y aplicación de<br>
 						soluciones.</p>
+					</li>
+					<li class="child-boxtext">
 						<h3>TEGNOLOGÍA MODERNA</h3>
 						<p class="text-gray">Usamos herramientas innovadoras para<br>
 						resolver las tareas asignadas. Es hora<br>
@@ -49,48 +59,54 @@
 					</li>
 				</ul>	
 			</section>
-			<section class="text">
-				<ul>
-					<li><h2>A qué nos dedicamos</h2></li>
-					<li><img class="post-image" src="imagenes/imagen5.jpg" alt="Busca tu diseño"></li>						
-					<li><img class="post-image" src="imagenes/imagen6.jpg" alt="Comparar para seleccionar lo mejor"></li>	
-					<li><img class="post-image" src="imagenes/imagen7.jpg" alt="Creando mi proyecto"></li>	
+			<section class="container">
+				<ul class="container-img-text">
+					<li class="text"><h2>A qué nos dedicamos</h2></li>
+				</ul>
+			</section>		
+			<section class="container">	
+				<ul class="container-img-box">	
+					<li class="child-box-img"><img src="imagenes/imagen5.jpg" alt="Busca tu diseño" width="373"></li>						
+					<li class="child-box-img"><img src="imagenes/imagen6.jpg" alt="Comparar para seleccionar lo mejor" width="373"></li>	
+					<li class="child-box-img"><img src="imagenes/imagen7.jpg" alt="Creando mi proyecto" width="373"></li>	
+				</ul>
+			</section>	
+			<section class="container">
+				<ul class="container-img-text">
+					<li class="text"><h2>Nuestro Equipo</h2></li>
 				</ul>
 			</section>
-			<section class="text">
-				<ul>
-					<li>
-						<h2>Nuestro equipo</h2>
-					</li>
-					<li>
-						<img src="imagenes/imagen4.jpg">
-						<p style="Top:2030px;">Andrés Cubo</p>
-						<p style="Top:2030px;">Diseñador de Productos</p>
-					</li>
-					<li>
-						<img src="imagenes/imagen3.jpg">
-						<p>Carla Palacios</p>
-						<p>Desarrolladora Frontend</p>
-					</li>
-					<li>	
-						<img src="imagenes/imagen2.jpg">a
-						<p>Mario Dorado</p>
+			<section class="container">	
+				<ul class="container-img-box-two">	
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen4.jpg" alt="Andrés" width="270">
+						<h3 style="Top:2030px;">Andrés Cubo</h3>
+						<p style="Top:2030px;">Diseñador de Productos</p>					
+					</li>						
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen3.jpg" alt="Carla" width="270">
+						<h3>Carla Palacios</h3>
+						<p>Desarrolladora Frontend</p>					
+					</li>	
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen2.jpg" alt="Mario" width="270">
+						<h3>Mario Dorado</h3>
 						<p>Marketing</p>
 					</li>
-					<li>
-						<img src="imagenes/imagen1.jpg">
-						<p>Pablo Mijangos</p>
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen1.jpg" alt="Pablo" width="270">
+						<h3>Pablo Mijangos</h3>
 						<p>Diseñador IU</p>
-					</li>
+					</li>	
 				</ul>
-			</section>
+			</section>	
 		</main>
-		<footer>
-			<address class="parent-food">
-				<h2 class="child-a">WebStudio</h2>
-				<h3 class="child-b">Calz. Ticomán 500, Ciudad de México, <br> CDMX, México</h3>
-				<a class="child-b" href="mailito:info@devstudio.com">info@devstudio.com</a>
-				<a class="child-b" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
+        <footer class="container">
+			<address class="container-foot">
+				<h2 class="child-textblue">WebStudio</h2>
+				<p class="child-textwhile">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+				<a class="child-textwhile" href="mailito:info@devstudio.com">info@devstudio.com</a>
+				<a class="child-textwhile" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
 			</address>
 		</footer>
 	</body>
