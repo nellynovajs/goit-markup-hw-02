@@ -11,15 +11,17 @@
   margin:auto;
 }
 
+.flex{
+  display:flex;
+}
+
 .container-text{
-  width: 1600px;
+  max-width: 1170px;
   height: 80px;
-  padding: 20px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: left;
-  margin: 0 auto;
-  padding: 5px; 
+  flex-grow: 2;
+  margin: 0 auto;  
+  justify-content:space-between;
 }
 .container-contact{
   width: 1600px;
@@ -31,7 +33,7 @@
   margin: 0 auto;
 }
 .child-textblue{
-  color:blue;
+  color:#2196F3;
 }
 .child-textblack{
   color:black;
@@ -40,9 +42,9 @@
   color:gray;
 }
 .child-textwhile{
-  color:white;
+  color:#FFFFFF;
 }
-.container-text, .child-textblue, .child-textblack{
+.container-text, .child-textblue, .child-textblack, .nav-link{
   padding: 5px; 
   align-items: center;  
 }
@@ -59,21 +61,43 @@
   width: 1600px;
   height: 600px;
   color: white;
-  background-color:black;
+  background-color:#212121;
   display: flex;
   justify-content: center;
   flex-flow: column;
   margin: 1 auto;
   padding: 1px; 
 }
-
+.child-textwhile-solution{
+  color:#FFFFFF;
+  font-family: 'Raleway, Roboto, Comic Sans MS';
+  font-style: normal;
+  font-size: 44px;
+}
 .box-dos{
   color:#F5F4FA;
-  background-color:blue;
-  display:inline;
-  padding:10px;
-  margin:10px;
+  background-color:#2196F3;
+  width: 261px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;  
 }
+
+.nav-link:hover{
+  background-color: #2196F3;
+}
+.nav-link{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight:500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align:left;
+  color:#212121;
+  text-decoration: none;
+  margin-right:50px;
+}
+
 .container-solution, .child-textwhile, .child-textblue{
   align-items: center;   
   padding: 2px; 
@@ -85,15 +109,13 @@
   width: 1170px;
   height: 150px;
   color: white;
-  border:1px solid rgb(197, 201, 189);
+  /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
   flex-direction:row;
-  /*flex-wrap: wrap;*/
   justify-content: flex-start;
-  /*flex-grow: 1;   */
 }
 .child-boxtext {
-  border: 2px dashed #2196F3;
+  /*border: 2px dashed #2196F3;*/
   padding: 2px;
   margin: 14px;
   color:black;
@@ -112,16 +134,14 @@
   width: 1173px;
   height: 400px;
   color: white;
-  border:1px solid rgb(197, 201, 189);
+  /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
   flex-direction:row;
-  /*flex-wrap: wrap;*/
   justify-content: flex-start;
-  /*align-items: center;*/
   flex-grow: 1; 
 }
  .child-box-img {
-  border: 1px dashed #2196F3;
+  /*border: 1px dashed #2196F3;*/
   padding: 1px;
   margin: 4px;
   color:black;
@@ -138,7 +158,7 @@
  .container-img-box-two{
   Width: 1173px;
   Height:368px;
-  color: white;
+  color: #F5F4FA;
   /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
   flex-direction:row;
@@ -146,20 +166,22 @@
   flex-grow: 1; 
 }
  .child-box-img-two {
-  border: 1px dashed #2196F3;
   padding: 1px;
   margin: 4px;
   color:black;
   Width: 270px;
   Height: 368px;
   text-align: center;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 
+  0px 1px 3px 0px #0000001F;
+  border-radius: 0px 0px 4px 4px;
 }
 /*foot*/
 .container-foot{
     width: 1600px;
     height: 252px;
     color: white;
-    background-color:black;
+    background-color:#2F303A;
     display: flex;
     justify-content: left;
     flex-direction:column;
@@ -167,6 +189,20 @@
     padding: 40px;
     align-items: left;
     flex-grow: 0.5; 
+  }
+
+  .child-textblue-foot{
+    color:#2196F3;
+    font-family: 'Raleway, Roboto, Comic Sans MS';
+    font-style: normal;
+    font-size: 26px;
+ }
+
+  .child-textwhile-foot{
+    color:#FFFFFF;
+    font-family: 'Roboto, Comic Sans MS';
+    font-style: normal;
+    font-size: 14px;
   }
 
 /*page2*/
@@ -184,13 +220,12 @@
 .container-box-one{
   width: 1170px;
   height: 50px;
-  border:1px solid rgb(197, 201, 189);
+  /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
-  flex-direction:row wrap;
   justify-content: center;
   flex-grow: 10; 
-  /*margin: 0 auto;
-  padding: 10px;*/
+  margin: 4 auto;
+  padding: 4px;
 }
 
 /* img box*/
@@ -208,10 +243,11 @@ html {
 
 .header-btn{
   color: black;
-  font-size: 14px;
+  font-family: 'Roboto';
+  font-size: 16px;
   border: 2px solid var(--main-title-color);
   border-bottom:25px;
-  background-color:grey;
+  background-color:#F5F4FA;
   padding: 10px;
 }
 
@@ -223,15 +259,17 @@ html {
 .container-img-box-two-p2{
   Width: 1170px;
   Height:1360px;
-  color: white;
-  border:1px solid rgb(197, 201, 189);
+  color: #EEEEEE;
+  /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
   justify-content: space-between ;
  }
  .child-box-img-two-p2{
-  border: 1px dashed #2196F3;
+  /*border: 1px dashed #2196F3;*/
+  font-family: 'Roboto';
+  font-size: 18px;
   padding: 1px;
   margin: 2px;
   color:black;

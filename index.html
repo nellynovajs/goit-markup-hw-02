@@ -3,29 +3,30 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="Primer Modulo HTML Web Studio" content="HTML5 con destino a principiantes">
-		<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-		<link rel="stylesheet"  href="css/styles.css"/>
-		<title>Prueba3</title>
+		<link rel="preconnect" href="https://fonts.goolgeapis.com"/>
+		<link rel="stylesheet"  href="./css/normalize.css"/>
+		<link rel="stylesheet"  href="./css/styles.css"/>
+		<title>WebStudio</title>
 	</head>	
 	<body>
 		<header>
-			<nav class="container">
-				<section class="container-text">
-					<h3 class="child-textblue">WebStudio</h3>					
-					<h3 class="child-textblack">Estudio</h3>
-					<a class="child-textblue" href="portafolio.html">portafolio.html</a>
-					<h3 class="child-textblack">Contactos</h3>
-				</section>
-				<section class="container-contact">
+			<div class="container-text">
+				<nav class="flex">
+					<a class="child-textblue">WebStudio</a>					
+					<a class="nav-link">Estudio</a>
+					<a class="child-textblue" href="portafolio.html">Portafolio</a>
+					<a class="nav-link">Contactos</a>
+				</nav>
+				<div class="container-contact">
 					<a class="child-textgray" href="mailito:info@devstudio.com">info@devstudio.com</a>
 					<a class="child-textgray" href="tel:+525555296000">+525555296000</a>
-				</section>
-			</nav>
+				</div>
+			</div>
 			<nav class="container">
 				<section class="container-solution">
-					<h1 class="child-textwhile">SOLUCIONES EFICACES PARA</h1>
-					<h1 class="child-textwhile">SU NEGOCIO</h1>
-					<h3 class="box-dos child-textwhile">Solicite nuestro servicio</h3>
+					<h1 class="child-textwhile-solution">SOLUCIONES EFICACES PARA</h1>
+					<h1 class="child-textwhile-solution">SU NEGOCIO</h1>
+					<button class="box-dos child-textwhile">Solicite nuestro servicio</button>
 				</section>	
 			</nav>
 		</header>
@@ -103,10 +104,10 @@
 		</main>
         <footer class="container">
 			<address class="container-foot">
-				<h2 class="child-textblue">WebStudio</h2>
-				<p class="child-textwhile">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-				<a class="child-textwhile" href="mailito:info@devstudio.com">info@devstudio.com</a>
-				<a class="child-textwhile" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
+				<h2 class="child-textblue-foot">WebStudio</h2>
+				<p class="child-textwhile-foot">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+				<a class="child-textwhile-foot" href="mailito:info@devstudio.com">info@devstudio.com</a>
+				<a class="child-textwhile-foot" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
 			</address>
 		</footer>
 	</body>
